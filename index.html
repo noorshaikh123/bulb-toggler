@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb Toggler</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <h1 class="text-heading">Bulb Toggler</h1> 
+   <br/><br/>
+   <img src="./images/bulb_off.png" class="bulb-default" id="bulb">
+   <div class="container">
+   <button class="btn" onClick="toggle_on()">On &#127765</button>
+   <button class="btn" onClick="toggle_off()">Off &#127770</button>
+   <script>
+    function toggle_on()
+    {
+        const element = document.getElementById('bulb');
+        element.src = "./images/bulb_on.png";
+    }
+    function toggle_off()
+    {
+        const element = document.getElementById('bulb');
+        element.src = "./images/bulb_off.png";
+    }
+   </script>
+</div>
+</body>
+</html>
